@@ -18,7 +18,9 @@ public class AddToCard extends TestBase{
                         "=2&RecentlyViewedProductIds=31&RecentlyViewedProductIds=74&RecentlyViewedProductIds=16;" +
                         " ARRAffinity=06e3c6706bb7098b5c9133287f2a8d510a64170f97e4ff5fa919999d67a34a46;" +
                         " __atuvc=1%7C12%2C0%7C13%2C27%7C14")
-                .body("giftcard_2.RecipientName=dan&giftcard_2.RecipientEmail=danvu%40ya.ru&giftcard_2.SenderName=%D0%94%D0%B0%D0%BD%D0%B8%D0%B8%D0%BB+%D0%92%D1%83%D0%BB%D0%B8%D1%85&giftcard_2.SenderEmail=danvu%40ya.ru&giftcard_2.Message=gdfjkhh&addtocart_2.EnteredQuantity=1")
+                .body("giftcard_2.RecipientName=dan&giftcard_2.RecipientEmail=danvu%40ya.ru&giftcard_2." +
+                        "SenderName=%D0%94%D0%B0%D0%BD%D0%B8%D0%B8%D0%BB+%D0%92%D1%83%D0%BB%D0%B8%D1%85&giftcard_2" +
+                        ".SenderEmail=danvu%40ya.ru&giftcard_2.Message=gdfjkhh&addtocart_2.EnteredQuantity=1")
                 .when()
                 .post("addproducttocart/details/2/2")
                 .then()
